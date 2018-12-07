@@ -1,22 +1,19 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-import {Row, Col, Button, Well, Media, Collapse} from 'react-bootstrap/lib';
-
-
-export default class ItemDetail extends Component{
-	constructor(props){
-		super(props);
-
-		this.state={
-			open:false
-
-		};
+import { Row, Col, Button, Well, Media, Collapse } from 'react-bootstrap/lib';
 
 
-	}
-  render() {
-    return (
-      <div>
+export default class ItemDetail extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            open: false
+        };
+    }
+    render() {
+        return (
+            <div>
         <Button
           className="item-details-button"
           bsStyle="link"
@@ -39,8 +36,7 @@ export default class ItemDetail extends Component{
                 </Media.Left>
                 <Media.Body>
                   <p>
-                    Essentials by OFM ESS-3085 Racing Style Leather Gaming
-                    Chair, Red
+                    Sample Chair
                   </p>
                   <Row className="show-grid">
                     <Col md={6}>
@@ -60,6 +56,6 @@ export default class ItemDetail extends Component{
           </div>
         </Collapse>
       </div>
-    );
-  }
+        );
+    }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Row, Col, Tooltip, OverlayTrigger } from 'react-bootstrap/lib';
+import { Row, Col } from 'react-bootstrap/lib';
 
 export default class TaxesFees extends Component {
 

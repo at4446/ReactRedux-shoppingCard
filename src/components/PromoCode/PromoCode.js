@@ -15,7 +15,7 @@ import { connect } from 'react-redux';
 import { handleChange } from '../../actions/promoCodeActions';
 
 class PromoCodeDiscount extends Component {
-  // we no longer need a constructor as the state will be managed in redux
+  
 
   constructor(props, context) {
     super(props, context);
@@ -23,13 +23,11 @@ class PromoCodeDiscount extends Component {
     this.state = {
       open: false
     };
-  }
+}
 
-  handleChange = e => {
-    // the setState below will be sent to redux
-    // this.setState({ value: e.target.value });
+  handleChange = e =>
     this.props.handleChange(e);
-  };
+  
 
   render() {
     return (
@@ -49,7 +47,7 @@ class PromoCodeDiscount extends Component {
                 <Col md={12}>
                   <Form>
                     <FormGroup controlId="formInlineName">
-                      <ControlLabel>Promo Code</ControlLabel>{' '}
+                      <ControlLabel>Promo Code (enter DISCOUNT)</ControlLabel>{' '}
                       <FormControl
                         type="text"
                         placeholder="Enter promo code"
@@ -77,6 +75,7 @@ class PromoCodeDiscount extends Component {
     );
   }
 }
+
 
 const mapStateToProps = state => ({
   promoCode: state.promoCode.value
